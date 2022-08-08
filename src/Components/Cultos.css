@@ -9,7 +9,7 @@
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(16, 17, 68, 0.774) 100%);
 }
 .titleContainer{
-    margin: 60px;
+    /* margin: 60px; */
     margin-left: 50px;
 }
 .title{
@@ -29,7 +29,7 @@
     align-self: center;
     overflow-x: scroll;
     scrollbar-color: #d5ac68 #f1db9d;
-  scrollbar-width: thin;
+  scrollbar-width: auto;
   -ms-overflow-style: none;
 }
 .carousel{
