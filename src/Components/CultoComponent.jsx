@@ -10,7 +10,7 @@ export default function CultoComponent({img, title, description, date, id}) {
             <div className="videoInfo">
                 <h1 className="videoTitle">{title}</h1>
                 <p className="videoDescription">{description}</p>
-                <p className="videoDate">Fecha: {date}</p>
+                <p className="videoDate">{date}</p>
             </div>
         </div>
     );

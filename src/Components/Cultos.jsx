@@ -14,8 +14,10 @@ const Cultos = () => {
         .then(data => {
             setCultos(
             data.items.map((culto,index) => {
+                const date = new Date(culto.snippet.publishedAt);
+                const dateString = `${date.getDate()}/${date.getMonth() + 1}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`;
                 return (
-                    <CultoComponent  key={index} className="culto" img={culto.snippet.thumbnails.high.url} title={culto.snippet.title} description={culto.snippet.description} date={culto.snippet.publishedAt} id={culto.snippet.resourceId.videoId} />
+                    <CultoComponent  key={index} className="culto" img={culto.snippet.thumbnails.high.url} title={culto.snippet.title} description={culto.snippet.description} date={dateString} id={culto.snippet.resourceId.videoId} />
                 )
             }))
         })

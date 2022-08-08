@@ -11,30 +11,30 @@ export default function NavBar(){
               <ul className="navbar-nav ml-auto" id="navbarOption">
                 <li className="nav-item">
                     <Link to="/">
-                        <a className="nav-link">
+                        <p className="nav-link">
                             Inicio
-                        </a>
+                        </p>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/servicios">
-                        <a className="nav-link">
+                        <p className="nav-link">
                             Servicios
-                        </a>
+                        </p>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/about">
-                        <a className="nav-link">
+                        <p className="nav-link">
                             Sobre nosotros
-                        </a>
+                        </p>
                     </Link>
                 </li>
                 <li className="nav-item">
                     <Link to="/contacto">
-                        <a className="nav-link">
+                        <p className="nav-link">
                             Contáctanos
-                        </a>
+                        </p>
                     </Link>
                 </li>
               </ul>
